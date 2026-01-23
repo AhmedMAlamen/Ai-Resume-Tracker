@@ -7,6 +7,13 @@ import {convertPdfToImage} from "~/lib/pdf2img";
 import {generateUUID} from "~/lib/utils";
 import {prepareInstructions} from "../../constants";
 
+export const meta = () => (
+    [
+        {title : 'WdAlamen | Upload'},
+        {name: 'description' , content : `Upload Your Resume To Get Started`},
+    ])
+
+
 const Upload = () => {
     const { auth, isLoading, fs, ai, kv } = usePuterStore();
     const navigate = useNavigate();
